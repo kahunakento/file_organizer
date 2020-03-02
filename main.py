@@ -3,11 +3,11 @@ from datetime import datetime
 import os
 import shutil
 
-print("### FO - File Organizer ###")
-print("Press CTRL + C to stop File Organizer.")
+print("### File Organizer ###")
+print("Press CTRL + C to stop the script.")
 
 # Creating folders in user/pictures/
-path_to_fo = Path.home() / "Pictures" / "FO - File Organizer"
+path_to_fo = Path.home() / "Pictures" / "File Organizer"
 path_to_src_files = path_to_fo / "Move your files in here"
 path_to_files_output = path_to_fo / "Organized files"
 
@@ -18,8 +18,8 @@ if not os.path.isdir(path_to_src_files):
 if not os.path.isdir(path_to_files_output):
     os.mkdir(path_to_files_output)
 
-print(f"Place your files into the folder {path_to_src_files}.")
-print(f"They will be moved to {path_to_files_output}.")
+print(f"Place your files into the folder '{path_to_src_files}'.")
+print(f"They will be moved to '{path_to_files_output}'.")
 
 # La magie
 while True:
